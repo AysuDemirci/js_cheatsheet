@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Concat from "./Concat"
-import { Button, Col, Collapse, Row } from "reactstrap";
+import IndexOf from "./IndexOf"
+import {Col, Row } from "reactstrap";
 
 export default function CheatSheet() {
 
@@ -57,21 +58,7 @@ export default function CheatSheet() {
 
            <Concat/>
             
-            <Col className="cheatsheet-style">
-              <h6>
-                indexOf() : Returns the first position at which a given element
-                appears in an array
-              </h6>
-              <pre>
-                const fruits = ["Apple","Pear","Cherry","Mango"]
-                <br />
-                let index = fruits.indexOf("Pear")
-                <br />
-                console.log(index)
-                <br />
-                =1
-              </pre>
-            </Col>
+            <IndexOf/>
            
             <Col className="cheatsheet-style">
               <h6>
