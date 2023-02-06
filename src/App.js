@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./Style.css"
+import CheatSheet from "./Components/CheatSheet";
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{overflow:"hidden"}}>
+      <div
+        style={{
+          backgroundColor: "#7f76aa",
+          height: "50px",
+          color: "white",
+
+        }}
+      >
+       <h3 style={{textAlign:"center",padding:"6px"}}> Javascript Cheatsheet</h3>
+       
+      </div>
+      
+        <CheatSheet/>
+      <br/>
     </div>
   );
 }
-
-export default App;
