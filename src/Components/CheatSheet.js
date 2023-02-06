@@ -54,6 +54,7 @@ export default function CheatSheet() {
               <pre>
                 <code>var fruit = ["Banana","Apple","Cherry"]</code>
               </pre>
+              xxx
             </Col>
 
            <Concat/>
