@@ -1,7 +1,16 @@
-import React from "react";
-import { Col } from "reactstrap";
+import React, { useState } from "react";
+import { Button, Col } from "reactstrap";
 
-export default function indexOf() {
+export default function IndexOf() {
+  
+    const [fruit ,setFruit]= useState([])
+
+    function ClickMe(){
+        const fruits = ["Apple","Pear","Cherry","Mango"]
+        let index = fruits.indexOf("Pear")
+        setFruit(index)
+    }
+
   return (
     <div>
       <Col className="cheatsheet-style">
@@ -18,6 +27,8 @@ export default function indexOf() {
           <br />
           =&gt; 1
         </pre>
+        <Button onClick={ClickMe}>Click Me</Button>
+        <div>{fruit}</div>
       </Col>
     </div>
   );
