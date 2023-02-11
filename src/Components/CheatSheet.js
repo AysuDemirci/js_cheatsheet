@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Concat from "./Concat";
 import IndexOf from "./IndexOf";
 import Join from "./Join";
@@ -12,6 +12,11 @@ import Splice from "./Splice";
 import ToString from "./ToString";
 import Unshift from "./Unshift";
 import ValueOf from "./ValueOf";
+import Alert from "./Functions/OutputtingData/Alert";
+import Confirm from "./Functions/OutputtingData/Confirm";
+import ConsoleLog from "./Functions/OutputtingData/ConsoleLog"
+import DocumentWrite from "./Functions/OutputtingData/DocumentWrite"
+import Prompt from "./Functions/OutputtingData/Prompt"
 
 export default function CheatSheet() {
   return (
@@ -76,9 +81,22 @@ export default function CheatSheet() {
             <ValueOf />
           </Col>
         </Col>
-        <Col md="3" style={{ border: "1px solid black", height: "250px" }}>
-          <h4>sss</h4>
-          <Col style={{ border: "1px solid black" }}></Col>
+        <Col md="3">
+          <h2 style={{ marginBottom: "20px" }}>Functions</h2>
+          <Col>
+            <Col className="cheatsheet-style">
+              <pre>
+                function name(parameter1,parameter2,parameter3)
+                <br />
+                &#123; what the function does &#125;
+              </pre>
+            </Col>
+            <Alert />
+            <Confirm/>
+            <ConsoleLog/>
+            <DocumentWrite/>
+            <Prompt/>
+          </Col>
         </Col>
       </Row>
     </div>
