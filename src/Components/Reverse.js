@@ -12,7 +12,7 @@ export default function Pop() {
 
   return (
     <div>
-      <Col className="cheatsheet-style">
+      <Col className="cheatsheet-style" style={{width:"490px",height:"220px"}}>
         <h6>reverse(): Reverse the order of the elements in an array</h6>
         <pre>
           const numbers =["1","2","3","4"]

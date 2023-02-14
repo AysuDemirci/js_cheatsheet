@@ -13,7 +13,7 @@ export default function LastIndexOf() {
 
   return (
     <div>
-      <Col className="cheatsheet-style">
+      <Col className="cheatsheet-style" style={{width:"490px",height:"220px"}}>
         <h6>
           lastIndexOf() : Gives the last position at which a given element
           appears in an array

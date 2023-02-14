@@ -14,8 +14,8 @@ export default function Concat() {
    
   return (
     <div>
-      <h4 style={{ marginTop: "10px" }}>Array Methods</h4>
-      <Col className="cheatsheet-style">
+      
+      <Col className="cheatsheet-style" style={{width:"490px",height:"220px"}}>
         <h6>concat() : Join several arrays into one</h6>
         <pre>
           const names1= ["Amy","Emily"]

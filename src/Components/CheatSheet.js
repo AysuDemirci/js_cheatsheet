@@ -14,14 +14,14 @@ import Unshift from "./Unshift";
 import ValueOf from "./ValueOf";
 import Alert from "./Functions/OutputtingData/Alert";
 import Confirm from "./Functions/OutputtingData/Confirm";
-import ConsoleLog from "./Functions/OutputtingData/ConsoleLog"
-import DocumentWrite from "./Functions/OutputtingData/DocumentWrite"
-import Prompt from "./Functions/OutputtingData/Prompt"
+import ConsoleLog from "./Functions/OutputtingData/ConsoleLog";
+import DocumentWrite from "./Functions/OutputtingData/DocumentWrite";
+import Prompt from "./Functions/OutputtingData/Prompt";
 
 export default function CheatSheet() {
   return (
     <div style={{ marginTop: "40px", marginLeft: "150px" }}>
-      <Row style={{ columnGap: "70px" }}>
+      <Row>
         <Col md="3">
           <h2 style={{ marginBottom: "20px" }}>Getting Started</h2>
           <Col className="cheatsheet-style">
@@ -55,7 +55,8 @@ export default function CheatSheet() {
             </pre>
           </Col>
         </Col>
-
+      </Row>
+      <Row>
         <Col md="4">
           <h2 style={{ marginBottom: "20px" }}>Arrays</h2>
           <Col>
@@ -65,22 +66,44 @@ export default function CheatSheet() {
                 <code>var fruit = ["Banana","Apple","Cherry"]</code>
               </pre>
             </Col>
+            <h4 style={{ marginTop: "20px",marginBottom:"20px" }}>Array Methods</h4>
+            
+            <Col>
+            <ul style={{display:"flex",listStyle:"none",gap:"50px",marginLeft:"-40px"}}>
+              <li ><Concat /></li>
+              <li><IndexOf /></li>
+              <li><Join /></li>
+             
+            </ul>
 
-            <Concat />
+            <ul style={{display:"flex",listStyle:"none",gap:"50px",marginLeft:"-40px"}}>
+              <li><LastIndexOf /></li>
+              <li><Reverse /></li>
+              <li><Shift /></li>
+              
+              
+            </ul>
 
-            <IndexOf />
-            <Join />
-            <LastIndexOf />
-            <Pop />
-            <Push />
-            <Reverse />
-            <Shift />
-            <Splice />
-            <ToString />
-            <Unshift />
-            <ValueOf />
+            <ul style={{display:"flex",listStyle:"none",gap:"50px",marginLeft:"-40px"}}>
+             <li><Pop /></li
+             ><li><Push /></li> 
+             <li><ToString /></li>
+             
+            </ul>
+            <ul style={{display:"flex",listStyle:"none",gap:"50px",marginLeft:"-40px"}}>
+            <li><Unshift /></li> 
+            <li><ValueOf /></li>
+            <li><Splice /></li> 
+            </ul>
+            </Col>
+            
+
+            
           </Col>
         </Col>
+      </Row>
+
+      <Row>
         <Col md="3">
           <h2 style={{ marginBottom: "20px" }}>Functions</h2>
           <Col>
@@ -92,10 +115,10 @@ export default function CheatSheet() {
               </pre>
             </Col>
             <Alert />
-            <Confirm/>
-            <ConsoleLog/>
-            <DocumentWrite/>
-            <Prompt/>
+            <Confirm />
+            <ConsoleLog />
+            <DocumentWrite />
+            <Prompt />
           </Col>
         </Col>
       </Row>
