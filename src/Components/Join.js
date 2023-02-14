@@ -12,7 +12,7 @@ export default function Join() {
 
   return (
     <div>
-      <Col className="cheatsheet-style">
+      <Col className="cheatsheet-style" style={{width:"490px",height:"220px"}}>
         <h6>
           join() : Combine elements of an array into a single string and return
           the string

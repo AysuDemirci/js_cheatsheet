@@ -19,7 +19,7 @@ export default function Splice() {
 
   return (
     <div>
-      <Col className="cheatsheet-style">
+      <Col className="cheatsheet-style" style={{width:"490px"}}>
         <h6>splice(): Adds elements in a specified way and position</h6>
         <pre>
           const fruits = ["Apple","Pear","Cherry"]

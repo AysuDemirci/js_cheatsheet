@@ -12,7 +12,7 @@ export default function Pop() {
 
   return (
     <div>
-      <Col className="cheatsheet-style">
+      <Col className="cheatsheet-style" style={{width:"490px",height:"220px"}}>
         <h6>shift(): Remove the first element of an array</h6>
         <pre>
           const myFish = ["Angel","Clown","Mandarin","Surgeon"]

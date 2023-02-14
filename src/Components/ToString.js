@@ -12,7 +12,7 @@ export default function ToString() {
 
   return (
     <div>
-      <Col className="cheatsheet-style">
+      <Col className="cheatsheet-style" style={{width:"490px",height:"220px"}}>
         <h6>toString(): Converts elements to strings</h6>
         <pre>
           const array1 = ["1","2","a","2a"]

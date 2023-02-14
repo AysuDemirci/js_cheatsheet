@@ -12,7 +12,7 @@ export default function Pop() {
   }
   return (
     <div>
-      <Col className="cheatsheet-style">
+      <Col className="cheatsheet-style" style={{width:"490px",height:"220px"}}>
         <h6>push(): Add a new element at the end</h6>
         <pre>
           const animals =["Cow","Horse","Sheep"]

@@ -12,7 +12,7 @@ export default function Unshift() {
 
   return (
     <div>
-      <Col className="cheatsheet-style">
+      <Col className="cheatsheet-style" style={{width:"490px",height:"220px"}}>
         <h6>unshift(): Adds a new element to the beginning</h6>
         <pre>
           const numbers = ["3","4","5","6"]

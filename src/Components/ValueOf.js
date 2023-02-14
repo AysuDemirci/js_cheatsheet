@@ -15,7 +15,7 @@ export default function ValueOf() {
 
   return (
     <div>
-      <Col className="cheatsheet-style">
+      <Col className="cheatsheet-style " style={{width:"490px",height:"220px"}}>
         <h6>valueOf(): Returns the primitive value of the specified object</h6>
         <pre>
           const fruits = ["Apple","Pear","Lemon","Cherry"]
