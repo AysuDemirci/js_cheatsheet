@@ -9,13 +9,13 @@ export default function Confirmed() {
   }
   return (
     <div>
-      <Col className="cheatsheet-style">
-        <h6>
+      <Col className="cheatsheet-style" style={{ width: "450px", height: "250px",marginTop:"45px" }}>
+        <h6 className="namestyle">
           console.log(): writes information to the browser console, good for
           debugging purposes
         </h6>
         (Look at the browser console)
-        <pre>
+        <pre className="namestyle">
           function ConsoleLog() &#123;
           <br />
           const lessons = ["Math", "History", "PE"];
@@ -24,7 +24,7 @@ export default function Confirmed() {
           <br />
           console.log(texts); &#125;
         </pre>
-        <Button onClick={ClickMe}>Click Me</Button>
+        <Button onClick={ClickMe} style={{marginLeft:"160px",marginTop:"0px"}}>Click Me</Button>
       </Col>
     </div>
   );
