@@ -12,9 +12,9 @@ export default function Pop() {
   }
   return (
     <div>
-      <Col className="cheatsheet-style" style={{width:"490px",height:"220px"}}>
-        <h6>push(): Add a new element at the end</h6>
-        <pre>
+      <Col className="cheatsheet-style" style={{width:"490px",height:"250px"}}>
+        <h6 className="namestyle">push(): Add a new element at the end</h6>
+        <pre className="namestyle">
           const animals =["Cow","Horse","Sheep"]
           <br />
           const total = animals.push("Chicken","Snake")
@@ -23,8 +23,8 @@ export default function Pop() {
           <br />
           =&gt;["Cow","Horse","Sheep","Chicken","Snake"]
         </pre>
-        <Button onClick={ClickMe}>Click Me</Button>
-        <div>{result}</div>
+        <Button onClick={ClickMe} style={{marginLeft:"180px",marginTop:"10px"}}>Click Me</Button>
+        <div style={{marginLeft:"110px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>
   );

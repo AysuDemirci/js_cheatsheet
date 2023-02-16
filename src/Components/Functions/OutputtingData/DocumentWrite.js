@@ -9,10 +9,10 @@ export default function Confirmed() {
   }
   return (
     <div>
-      <Col className="cheatsheet-style">
-        <h6>document.write(): write directly to the HTML document</h6>
+      <Col className="cheatsheet-style" style={{ width: "450px", height: "250px" }}>
+        <h6 className="namestyle">document.write(): write directly to the HTML document</h6>
 
-        <pre>
+        <pre className="namestyle">
           function ConsoleLog() &#123;
           <br />
           const lessons = ["Math", "History", "PE"];
@@ -21,7 +21,7 @@ export default function Confirmed() {
           <br />
           document.write(texts); &#125;
         </pre>
-        <Button onClick={ClickMe}>Click Me</Button>
+        <Button onClick={ClickMe} style={{marginLeft:"160px",marginTop:"20px"}}>Click Me</Button>
       </Col>
     </div>
   );

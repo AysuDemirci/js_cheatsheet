@@ -8,14 +8,14 @@ export default function Confirmed() {
 
   return (
     <div>
-      <Col className="cheatsheet-style">
-        <h6>prompt(): creates an dialogue for user input</h6>
-        <pre>
+      <Col className="cheatsheet-style" style={{ width: "450px", height: "250px" }}>
+        <h6 className="namestyle">prompt(): creates an dialogue for user input</h6>
+        <pre className="namestyle">
           function myFunc() &#123;
           <br />
           prompt("Please enter your name")&#125;
         </pre>
-        <Button onClick={myFunc}>Click Me</Button>
+        <Button onClick={myFunc} style={{marginLeft:"160px",marginTop:"50px"}}>Click Me</Button>
       </Col>
     </div>
   );

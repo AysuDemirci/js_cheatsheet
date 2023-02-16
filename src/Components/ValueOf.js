@@ -15,9 +15,9 @@ export default function ValueOf() {
 
   return (
     <div>
-      <Col className="cheatsheet-style " style={{width:"490px",height:"220px"}}>
-        <h6>valueOf(): Returns the primitive value of the specified object</h6>
-        <pre>
+      <Col className="cheatsheet-style " style={{width:"490px",height:"250px"}}>
+        <h6 className="namestyle">valueOf(): Returns the primitive value of the specified object</h6>
+        <pre className="namestyle">
           const fruits = ["Apple","Pear","Lemon","Cherry"]
           <br />
           const value = fruits.valueOf()
@@ -26,8 +26,8 @@ export default function ValueOf() {
           <br />
           =&gt;["Apple","Pear","Lemon","Cherry"]
         </pre>
-        <Button onClick={ClickMe}>Click Me</Button>
-        <div>{result}</div>
+        <Button onClick={ClickMe} style={{marginLeft:"180px",marginTop:"10px"}}>Click Me</Button>
+        <div style={{marginLeft:"130px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>
   );

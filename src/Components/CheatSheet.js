@@ -20,11 +20,11 @@ import Prompt from "./Functions/OutputtingData/Prompt";
 
 export default function CheatSheet() {
   return (
-    <div style={{ marginTop: "40px", marginLeft: "150px" }}>
-      <Row>
-        <Col md="3">
+    <div style={{ marginTop: "40px", marginLeft: "130px" }}>
+      <Row style={{ gap: "50px" }}>
+        <Col>
           <h2 style={{ marginBottom: "20px" }}>Getting Started</h2>
-          <Col className="cheatsheet-style">
+          <Col className="cheatsheet-style" style={{ width: "500px" }}>
             <h4 style={{ marginTop: "10px" }}>Console</h4>
 
             <pre>
@@ -55,6 +55,55 @@ export default function CheatSheet() {
             </pre>
           </Col>
         </Col>
+        <Col>
+          <h2 style={{ marginBottom: "20px" }}>Operators</h2>
+          <Col className="cheatsheet-style" style={{ width: "500px" }}>
+            <h4 style={{ marginTop: "10px" }}>Basic Operators</h4>
+            + &nbsp;&nbsp;&nbsp;Addition
+            <br />
+            - &nbsp;&nbsp;&nbsp;Subtraction
+            <br />
+            * &nbsp;&nbsp;&nbsp;Multiplication
+            <br />
+            / &nbsp;&nbsp;&nbsp;Division
+            <br />
+            (..) &nbsp;&nbsp;&nbsp;Grouping operator
+            <br />
+            % &nbsp;&nbsp;&nbsp;Modulus (remainder)
+            <br />
+            ++ &nbsp;&nbsp;&nbsp;Increment numbers
+            <br />
+            -- &nbsp;&nbsp;&nbsp;Decrement numbers
+            <br />
+          </Col>
+        </Col>
+        <Col>
+          <Col
+            className="cheatsheet-style"
+            style={{ width: "500px", marginTop: "60px" }}
+          >
+            <h4 style={{ marginTop: "10px" }}>Comparison Operators</h4>
+            == &nbsp;&nbsp;&nbsp; Equal to
+            <br />
+            === &nbsp;&nbsp;&nbsp; Equal value and equal type
+            <br />
+            != &nbsp;&nbsp;&nbsp; Not equal
+            <br />
+            !== &nbsp;&nbsp;&nbsp; Not equal value or not equal type
+            <br />
+            &gt; &nbsp;&nbsp;&nbsp; Greater than
+            <br />
+            &lt; &nbsp;&nbsp;&nbsp;Less than
+            <br />
+            &gt;= &nbsp;&nbsp;&nbsp; Greater than or equal to
+            <br />
+            &lt;= &nbsp;&nbsp;&nbsp; Less than or equal to
+            <br />
+            ? &nbsp;&nbsp;&nbsp;Ternary operator
+            <br />
+          </Col>
+        </Col>
+        <Col></Col>
       </Row>
       <Row>
         <Col md="4">
@@ -66,39 +115,88 @@ export default function CheatSheet() {
                 <code>var fruit = ["Banana","Apple","Cherry"]</code>
               </pre>
             </Col>
-            <h4 style={{ marginTop: "20px",marginBottom:"20px" }}>Array Methods</h4>
-            
-            <Col>
-            <ul style={{display:"flex",listStyle:"none",gap:"50px",marginLeft:"-40px"}}>
-              <li ><Concat /></li>
-              <li><IndexOf /></li>
-              <li><Join /></li>
-             
-            </ul>
+            <Row>
+              <h4 style={{ marginTop: "20px", marginBottom: "20px" }}>
+                Array Methods
+              </h4>
 
-            <ul style={{display:"flex",listStyle:"none",gap:"50px",marginLeft:"-40px"}}>
-              <li><LastIndexOf /></li>
-              <li><Reverse /></li>
-              <li><Shift /></li>
-              
-              
-            </ul>
+              <Col>
+                <ul
+                  style={{
+                    display: "flex",
+                    listStyle: "none",
+                    gap: "100px",
+                    marginLeft: "-40px",
+                  }}
+                >
+                  <li>
+                    <Concat />
+                  </li>
+                  <li>
+                    <IndexOf />
+                  </li>
+                  <li>
+                    <Join />
+                  </li>
+                </ul>
 
-            <ul style={{display:"flex",listStyle:"none",gap:"50px",marginLeft:"-40px"}}>
-             <li><Pop /></li
-             ><li><Push /></li> 
-             <li><ToString /></li>
-             
-            </ul>
-            <ul style={{display:"flex",listStyle:"none",gap:"50px",marginLeft:"-40px"}}>
-            <li><Unshift /></li> 
-            <li><ValueOf /></li>
-            <li><Splice /></li> 
-            </ul>
-            </Col>
-            
+                <ul
+                  style={{
+                    display: "flex",
+                    listStyle: "none",
+                    gap: "100px",
+                    marginLeft: "-40px",
+                  }}
+                >
+                  <li>
+                    <LastIndexOf />
+                  </li>
+                  <li>
+                    <Reverse />
+                  </li>
+                  <li>
+                    <Shift />
+                  </li>
+                </ul>
 
-            
+                <ul
+                  style={{
+                    display: "flex",
+                    listStyle: "none",
+                    gap: "100px",
+                    marginLeft: "-40px",
+                  }}
+                >
+                  <li>
+                    <Pop />
+                  </li>
+                  <li>
+                    <Push />
+                  </li>
+                  <li>
+                    <ToString />
+                  </li>
+                </ul>
+                <ul
+                  style={{
+                    display: "flex",
+                    listStyle: "none",
+                    gap: "100px",
+                    marginLeft: "-40px",
+                  }}
+                >
+                  <li>
+                    <Unshift />
+                  </li>
+                  <li>
+                    <ValueOf />
+                  </li>
+                  <li>
+                    <Splice />
+                  </li>
+                </ul>
+              </Col>
+            </Row>
           </Col>
         </Col>
       </Row>
@@ -114,11 +212,49 @@ export default function CheatSheet() {
                 &#123; what the function does &#125;
               </pre>
             </Col>
-            <Alert />
-            <Confirm />
-            <ConsoleLog />
-            <DocumentWrite />
-            <Prompt />
+            <Row>
+              <Col>
+                {" "}
+                <ul
+                  style={{
+                    display: "flex",
+                    listStyle: "none",
+                    gap: "100px",
+                    marginLeft: "-40px",
+                  }}
+                >
+                  <li>
+                    <Alert />
+                  </li>
+                  <li>
+                    <Confirm />
+                  </li>
+                  <li>
+                    <ConsoleLog />
+                  </li>
+                  
+                 
+                </ul>
+                <br/>
+                <Row>
+                  <ul style={{
+                    display: "flex",
+                    listStyle: "none",
+                    gap: "100px",
+                    marginLeft: "-10px",
+                    
+                  }}>
+                  <li>
+                    <DocumentWrite />
+                  </li>
+                  <li>
+                    {" "}
+                    <Prompt />
+                  </li>
+                  </ul>
+                </Row>
+              </Col>
+            </Row>
           </Col>
         </Col>
       </Row>
