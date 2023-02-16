@@ -8,14 +8,14 @@ export default function Confirmed() {
 
   return (
     <div>
-      <Col className="cheatsheet-style">
-        <h6>confirm(): Opens up yes/no dialog and returns true/false depending on user click</h6>
-        <pre>
+      <Col className="cheatsheet-style" style={{ width: "450px", height: "250px",marginTop:"45px" }}>
+        <h6 className="namestyle">confirm(): Opens up yes/no dialog and returns true/false depending on user click</h6>
+        <pre className="namestyle">
           function myFunc() &#123;
           <br />
           window.confirm("Press OK to close this option")&#125;
         </pre>
-        <Button onClick={myFunc}>Click Me</Button>
+        <Button onClick={myFunc} style={{marginLeft:"160px",marginTop:"20px"}}>Click Me</Button>
       </Col>
     </div>
   );

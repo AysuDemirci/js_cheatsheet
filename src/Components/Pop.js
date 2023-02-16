@@ -13,9 +13,9 @@ export default function Pop() {
 
   return (
     <div>
-      <Col className="cheatsheet-style" style={{width:"490px",height:"220px"}}>
-        <h6>pop() : Removes the last element of an array</h6>
-        <pre>
+      <Col className="cheatsheet-style" style={{width:"490px",height:"250px"}}>
+        <h6 className="namestyle">pop() : Removes the last element of an array</h6>
+        <pre className="namestyle">
           const fruits = ["Apple","Cherry","Mango","Pear"]
           <br />
           const popped = fruits.pop()
@@ -24,8 +24,8 @@ export default function Pop() {
           <br />
           =&gt; ["Pear"]
         </pre>
-        <Button onClick={ClickMe}>Click Me</Button>
-        <div>{result}</div>
+        <Button onClick={ClickMe} style={{marginLeft:"180px",marginTop:"10px"}}>Click Me</Button>
+        <div style={{marginLeft:"210px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>
   );

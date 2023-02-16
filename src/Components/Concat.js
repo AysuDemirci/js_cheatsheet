@@ -15,9 +15,9 @@ export default function Concat() {
   return (
     <div>
       
-      <Col className="cheatsheet-style" style={{width:"490px",height:"220px"}}>
-        <h6>concat() : Join several arrays into one</h6>
-        <pre>
+      <Col className="cheatsheet-style " style={{width:"490px",height:"250px"}}>
+        <h6 className="namestyle">concat() : Join several arrays into one</h6>
+        <pre className="namestyle">
           const names1= ["Amy","Emily"]
           <br />
           const names2 =["Roxenne","Todd"]
@@ -28,9 +28,9 @@ export default function Concat() {
           <br />
           =&gt; ["Amy","Emily","Roxenne","Todd"]
         </pre>
-        <Button onClick={ClickMe}>Click Me</Button>
+        <Button onClick={ClickMe} style={{marginLeft:"180px",marginTop:"10px"}}>Click Me</Button>
         
-        <div>{result}</div>
+        <div style={{marginLeft:"130px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>
   );

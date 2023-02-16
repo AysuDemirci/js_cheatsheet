@@ -20,8 +20,8 @@ export default function Splice() {
   return (
     <div>
       <Col className="cheatsheet-style" style={{width:"490px"}}>
-        <h6>splice(): Adds elements in a specified way and position</h6>
-        <pre>
+        <h6 className="namestyle">splice(): Adds elements in a specified way and position</h6>
+        <pre className="namestyle">
           const fruits = ["Apple","Pear","Cherry"]
           <br />
           const spliced = fruits.splice(2,0,"Lemon")
@@ -31,9 +31,9 @@ export default function Splice() {
           =&gt;["Apple","Pear","Lemon","Cherry"]
           <br />
         </pre>
-        <Button onClick={ClickMe}>Click Me</Button>
-        <div>{result}</div>
-        <pre>
+        <Button onClick={ClickMe} style={{marginLeft:"180px",marginTop:"10px"}}>Click Me</Button>
+        <div style={{marginLeft:"130px",marginTop:"10px"}}>{result}</div>
+        <pre className="namestyle">
           <br />
           const fruits = ["Apple","Pear","Lemon","Cherry"]
           <br />
@@ -43,8 +43,8 @@ export default function Splice() {
           <br />
           =&gt;["Apple","Pear","Lemon"]
         </pre>
-        <Button onClick={ClickMe2}>Click Me</Button>
-        <div>{result2}</div>
+        <Button onClick={ClickMe2} style={{marginLeft:"180px",marginTop:"10px"}}>Click Me</Button>
+        <div style={{marginLeft:"130px",marginTop:"10px"}}>{result2}</div>
       </Col>
     </div>
   );
