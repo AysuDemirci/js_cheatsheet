@@ -11,5 +11,9 @@
 
 .namestyle{
     margin-top: 15px;
-    margin-left: 15px;
+    margin-left: 10px;
+}
+
+.td-style{
+    font-weight: 600;
 }
