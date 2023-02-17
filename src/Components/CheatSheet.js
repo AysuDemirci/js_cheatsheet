@@ -17,6 +17,8 @@ import Confirm from "./Functions/OutputtingData/Confirm";
 import ConsoleLog from "./Functions/OutputtingData/ConsoleLog";
 import DocumentWrite from "./Functions/OutputtingData/DocumentWrite";
 import Prompt from "./Functions/OutputtingData/Prompt";
+import Continued from "./Functions/Global Function/Continued"
+import Parse from "./Functions/Global Function/Parse"
 
 export default function CheatSheet() {
   return (
@@ -103,7 +105,7 @@ export default function CheatSheet() {
             <br />
           </Col>
         </Col>
-        <Col></Col>
+        
       </Row>
       <Row>
         <Col md="4">
@@ -213,7 +215,7 @@ export default function CheatSheet() {
               </pre>
             </Col>
             <Row>
-              <Col>
+              <Col >
                 {" "}
                 <ul
                   style={{
@@ -232,26 +234,39 @@ export default function CheatSheet() {
                   <li>
                     <ConsoleLog />
                   </li>
-                  
-                 
                 </ul>
-                <br/>
+                <br />
                 <Row>
-                  <ul style={{
-                    display: "flex",
-                    listStyle: "none",
-                    gap: "100px",
-                    marginLeft: "-10px",
-                    
-                  }}>
-                  <li>
-                    <DocumentWrite />
-                  </li>
-                  <li>
-                    {" "}
-                    <Prompt />
-                  </li>
+                  <ul
+                    style={{
+                      display: "flex",
+                      listStyle: "none",
+                      gap: "100px",
+                      marginLeft: "-10px",
+                    }}
+                  >
+                    <li>
+                      <DocumentWrite />
+                    </li>
+                    <li>
+                      {" "}
+                      <Prompt />
+                    </li>
                   </ul>
+                </Row>
+                <Row >
+                  <ul  style={{
+                      display: "flex",
+                      listStyle: "none",
+                      gap: "100px",
+                      marginLeft: "-10px",
+                    }}>
+                    
+                    <li><Continued/></li>
+                    <li><Parse/></li>
+                  </ul>
+                
+                  
                 </Row>
               </Col>
             </Row>
