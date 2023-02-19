@@ -17,8 +17,9 @@ import Confirm from "./Functions/OutputtingData/Confirm";
 import ConsoleLog from "./Functions/OutputtingData/ConsoleLog";
 import DocumentWrite from "./Functions/OutputtingData/DocumentWrite";
 import Prompt from "./Functions/OutputtingData/Prompt";
-import Continued from "./Functions/Global Function/Continued"
-import Parse from "./Functions/Global Function/Parse"
+import Continued from "./Functions/Global Function/Continued";
+import Parse from "./Functions/Global Function/Parse";
+import For from "./Loops/For";
 
 export default function CheatSheet() {
   return (
@@ -105,7 +106,6 @@ export default function CheatSheet() {
             <br />
           </Col>
         </Col>
-        
       </Row>
       <Row>
         <Col md="4">
@@ -215,7 +215,7 @@ export default function CheatSheet() {
               </pre>
             </Col>
             <Row>
-              <Col >
+              <Col>
                 {" "}
                 <ul
                   style={{
@@ -254,24 +254,50 @@ export default function CheatSheet() {
                     </li>
                   </ul>
                 </Row>
-                <Row >
-                  <ul  style={{
+                <Row>
+                  <ul
+                    style={{
                       display: "flex",
                       listStyle: "none",
                       gap: "100px",
                       marginLeft: "-10px",
-                    }}>
-                    
-                    <li><Continued/></li>
-                    <li><Parse/></li>
+                    }}
+                  >
+                    <li>
+                      <Continued />
+                    </li>
+                    <li>
+                      <Parse />
+                    </li>
                   </ul>
-                
-                  
                 </Row>
               </Col>
             </Row>
           </Col>
         </Col>
+      </Row>
+      <Row style={{columnGap:"170px"}}>
+        <h3>Loops </h3>
+        <Col md="3">
+          <Col className="cheatsheet-style" style={{ width: "500px" }}>
+            <Col>
+              <pre>
+                <code>
+                  for(before loop;condition for loop;execute after loop)
+                  <br />
+                  &#123; //what to do during the loop &#125;
+                </code>
+              </pre>
+            </Col>
+          </Col>
+        </Col>
+        <Row>
+        
+        <Col md="3" >
+          <For/>
+        </Col>
+        </Row>
+        
       </Row>
     </div>
   );
