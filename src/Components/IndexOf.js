@@ -13,7 +13,7 @@ export default function IndexOf() {
 
   return (
     <div>
-      <Col className="cheatsheet-style" style={{width:"490px",height:"250px"}}>
+      <Col className="cheatsheet-style" style={{width:"490px",height:"270px"}}>
         <h6 className="namestyle">
           indexOf() : Returns the first position at which a given element
           appears in an array
