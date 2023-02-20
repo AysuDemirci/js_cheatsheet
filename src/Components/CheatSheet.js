@@ -20,6 +20,10 @@ import Prompt from "./Functions/OutputtingData/Prompt";
 import Continued from "./Functions/Global Function/Continued";
 import Parse from "./Functions/Global Function/Parse";
 import For from "./Loops/For";
+import While from "./Loops/While";
+import DoWhile from "./Loops/DoWhile";
+import Break from "./Loops/Break";
+import Continue from "./Loops/Continue";
 
 export default function CheatSheet() {
   return (
@@ -294,7 +298,27 @@ export default function CheatSheet() {
         <Row>
         
         <Col md="3" >
-          <For/>
+          <ul style={{
+                      display: "flex",
+                      listStyle: "none",
+                      gap: "100px",
+                      marginLeft: "-30px",
+                    }}>
+            <li> <For/></li>
+            <li><While/></li>
+            <li><DoWhile/></li>
+          </ul>
+          <ul style={{
+                      display: "flex",
+                      listStyle: "none",
+                      gap: "100px",
+                      marginLeft: "-30px",
+                    }}>
+            <li><Break/></li>
+            <li><Continue/></li>
+          </ul>
+         
+          
         </Col>
         </Row>
         

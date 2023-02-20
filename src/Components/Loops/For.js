@@ -17,7 +17,7 @@ export default function For() {
     <div>
       <Col
         className="cheatsheet-style "
-        style={{ width: "490px", height: "270px", marginTop: "20px" }}
+        style={{ width: "490px", height: "350px", marginTop: "20px" }}
       >
         <h6 className="namestyle">
           for : The most common way to create a loop in Javascript
