@@ -32,9 +32,7 @@ see if the condition is met to execute again
           <br />
           do &#123;
           <br />
-          text +=i + ",";
-          <br/>
-           i++
+          text +=i + ","; i++;
           <br />
            &#125;
           <br />
@@ -42,8 +40,8 @@ see if the condition is met to execute again
           <br/>
           =&gt;0,1,2
         </pre>
-        <Button onClick={WhileExm}>Click Me</Button>
-        <div>{result}</div>
+        <Button style={{marginLeft:"180px"}} onClick={WhileExm}>Click Me</Button>
+        <div style={{marginLeft:"205px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>
   );
