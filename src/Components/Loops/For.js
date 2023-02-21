@@ -33,8 +33,8 @@ export default function For() {
           <br />
           =&gt;BMW,Volvo,Ford,Fiat,Audi
         </pre>
-        <Button onClick={ForLoop}>Click Me</Button>
-        <div >{forloop}</div>
+        <Button style={{marginLeft:"180px",marginTop:"10px"}} onClick={ForLoop}>Click Me</Button>
+        <div style={{marginLeft:"130px",marginTop:"10px"}}>{forloop}</div>
       </Col>
     </div>
   );
