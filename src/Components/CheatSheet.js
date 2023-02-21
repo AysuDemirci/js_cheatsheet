@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Concat from "./Concat";
 import IndexOf from "./IndexOf";
 import Join from "./Join";
-import { Col, Row } from "reactstrap";
+import { Button, Col, Row, Table } from "reactstrap";
 import LastIndexOf from "./LastIndexOf";
 import Pop from "./Pop";
 import Push from "./Push";
@@ -26,9 +26,21 @@ import Break from "./Loops/Break";
 import Continue from "./Loops/Continue";
 
 export default function CheatSheet() {
+
+  
+
+function İfElse(){
+  const number =prompt("Enter a number: ")
+  if(number>0){
+     alert("The number greater than 0")
+  }else{
+    alert("The number less than 0")
+  }
+}
+
   return (
     <div style={{ marginTop: "40px", marginLeft: "130px" }}>
-      <Row style={{ gap: "50px" }}>
+      <Row style={{ gap: "30px" }}>
         <Col>
           <h2 style={{ marginBottom: "20px" }}>Getting Started</h2>
           <Col className="cheatsheet-style" style={{ width: "500px" }}>
@@ -64,50 +76,92 @@ export default function CheatSheet() {
         </Col>
         <Col>
           <h2 style={{ marginBottom: "20px" }}>Operators</h2>
-          <Col className="cheatsheet-style" style={{ width: "500px" }}>
+          <Col
+            className="cheatsheet-style"
+            style={{ width: "500px", height: "390px" }}
+          >
             <h4 style={{ marginTop: "10px" }}>Basic Operators</h4>
-            + &nbsp;&nbsp;&nbsp;Addition
-            <br />
-            - &nbsp;&nbsp;&nbsp;Subtraction
-            <br />
-            * &nbsp;&nbsp;&nbsp;Multiplication
-            <br />
-            / &nbsp;&nbsp;&nbsp;Division
-            <br />
-            (..) &nbsp;&nbsp;&nbsp;Grouping operator
-            <br />
-            % &nbsp;&nbsp;&nbsp;Modulus (remainder)
-            <br />
-            ++ &nbsp;&nbsp;&nbsp;Increment numbers
-            <br />
-            -- &nbsp;&nbsp;&nbsp;Decrement numbers
-            <br />
+            <Table style={{ marginTop: "20px" }}>
+              <tr>
+                <td>+ </td>
+                <td>Addition</td>
+              </tr>
+              <tr>
+                <td> -</td>
+                <td>Subtraction</td>
+              </tr>
+              <tr>
+                <td>* </td>
+                <td>Multiplication</td>
+              </tr>
+              <tr>
+                <td>/ </td>
+                <td>Division</td>
+              </tr>
+              <tr>
+                <td> (..) </td>
+                <td>Grouping operator</td>
+              </tr>
+              <tr>
+                <td>% </td>
+                <td>Modulus (remainder)</td>
+              </tr>
+              <tr>
+                <td>++ </td>
+                <td>Increment numbers</td>
+              </tr>
+              <tr>
+                <td>-- </td>
+                <td>Decrement numbers</td>
+              </tr>
+            </Table>
           </Col>
         </Col>
         <Col>
           <Col
             className="cheatsheet-style"
-            style={{ width: "500px", marginTop: "60px" }}
+            style={{ width: "500px", marginTop: "60px", height: "390px" }}
           >
             <h4 style={{ marginTop: "10px" }}>Comparison Operators</h4>
-            == &nbsp;&nbsp;&nbsp; Equal to
-            <br />
-            === &nbsp;&nbsp;&nbsp; Equal value and equal type
-            <br />
-            != &nbsp;&nbsp;&nbsp; Not equal
-            <br />
-            !== &nbsp;&nbsp;&nbsp; Not equal value or not equal type
-            <br />
-            &gt; &nbsp;&nbsp;&nbsp; Greater than
-            <br />
-            &lt; &nbsp;&nbsp;&nbsp;Less than
-            <br />
-            &gt;= &nbsp;&nbsp;&nbsp; Greater than or equal to
-            <br />
-            &lt;= &nbsp;&nbsp;&nbsp; Less than or equal to
-            <br />
-            ? &nbsp;&nbsp;&nbsp;Ternary operator
-            <br />
+
+            <Table style={{ marginTop: "20px" }}>
+              <tr>
+                <td> ==</td>
+                <td>Equal to</td>
+              </tr>
+              <tr>
+                <td> ===</td>
+                <td>Equal value and equal type</td>
+              </tr>
+              <tr>
+                <td> !=</td>
+                <td> Not equal</td>
+              </tr>
+              <tr>
+                <td> !==</td>
+                <td>Not equal value or not equal type</td>
+              </tr>
+              <tr>
+                <td>&gt; </td>
+                <td>Greater than</td>
+              </tr>
+              <tr>
+                <td> &lt;</td>
+                <td>Less than</td>
+              </tr>
+              <tr>
+                <td> &lt;=</td>
+                <td> Greater than or equal to</td>
+              </tr>
+              <tr>
+                <td> &lt;=</td>
+                <td>Less than or equal to</td>
+              </tr>
+              <tr>
+                <td> ?</td>
+                <td>Ternary operator</td>
+              </tr>
+            </Table>
           </Col>
         </Col>
       </Row>
@@ -280,7 +334,7 @@ export default function CheatSheet() {
           </Col>
         </Col>
       </Row>
-      <Row style={{columnGap:"170px"}}>
+      <Row style={{ columnGap: "170px" }}>
         <h3>Loops </h3>
         <Col md="3">
           <Col className="cheatsheet-style" style={{ width: "500px" }}>
@@ -296,32 +350,81 @@ export default function CheatSheet() {
           </Col>
         </Col>
         <Row>
-        
-        <Col md="3" >
-          <ul style={{
-                      display: "flex",
-                      listStyle: "none",
-                      gap: "100px",
-                      marginLeft: "-30px",
-                    }}>
-            <li> <For/></li>
-            <li><While/></li>
-            <li><DoWhile/></li>
-          </ul>
-          <ul style={{
-                      display: "flex",
-                      listStyle: "none",
-                      gap: "100px",
-                      marginLeft: "-30px",
-                    }}>
-            <li><Break/></li>
-            <li><Continue/></li>
-          </ul>
-         
-          
-        </Col>
+          <Col md="3">
+            <ul
+              style={{
+                display: "flex",
+                listStyle: "none",
+                gap: "100px",
+                marginLeft: "-30px",
+              }}
+            >
+              <li>
+                {" "}
+                <For />
+              </li>
+              <li>
+                <While />
+              </li>
+              <li>
+                <DoWhile />
+              </li>
+            </ul>
+            <ul
+              style={{
+                display: "flex",
+                listStyle: "none",
+                gap: "100px",
+                marginLeft: "-30px",
+              }}
+            >
+              <li>
+                <Break />
+              </li>
+              <li>
+                <Continue />
+              </li>
+            </ul>
+          </Col>
         </Row>
-        
+        <Row style={{ columnGap: "150px" }}>
+          <Col md="3">
+            <h3>If - Else</h3>
+            <Col
+              className="cheatsheet-style"
+              style={{ width: "500px", height: "330px" }}
+            >
+              <pre>
+                if(condition)&#123;
+                <br />
+                //what to do if condition is met
+                <br />
+                &#125;else&#123;
+                <br />
+                //what to do if condition is not met &#125;
+              </pre>
+              <h5>Example</h5>
+              <pre>
+                
+                
+                const number =prompt("Enter a number: ")
+                <br/>
+                if(number &gt; 0)&#123;
+                <br/>
+                alert("The number is greater than 0")
+                <br/>
+
+                &#125;else&#123;
+                <br/>
+                alert("The number is less than 0")
+                &#125;
+              </pre>
+              <Button onClick={İfElse}>Click Me</Button>
+              
+            </Col>
+          </Col>
+          
+        </Row>
       </Row>
     </div>
   );

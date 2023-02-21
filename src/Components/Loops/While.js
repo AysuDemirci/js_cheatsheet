@@ -36,8 +36,8 @@ export default function For() {
           <br />
           =&gt;The number is 0, The number is 1
         </pre>
-        <Button onClick={WhileExm}>Click Me</Button>
-        <div>{result}</div>
+        <Button style={{marginLeft:"180px",marginTop:"10px"}} onClick={WhileExm}>Click Me</Button>
+        <div style={{marginLeft:"110px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>
   );
