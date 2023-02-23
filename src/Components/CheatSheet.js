@@ -24,19 +24,27 @@ import While from "./Loops/While";
 import DoWhile from "./Loops/DoWhile";
 import Break from "./Loops/Break";
 import Continue from "./Loops/Continue";
+import CharAt from "./String/CharAt"
+import CharCodeAt from "./String/CharCodeAt"
+import FromCharCode from "./String/FromCharCode"
+import Replace from "./String/Replace"
+import Search from "./String/Search"
+import Slice from "./String/Slice"
+import Split from "./String/Split"
+import Substr from "./String/Substr"
+import Substring from "./String/Substring"
+import ToLowerCase from "./String/ToLowerCase"
+import ToUpperCase from "./String/ToUpperCase"
 
 export default function CheatSheet() {
-
-  
-
-function İfElse(){
-  const number =prompt("Enter a number: ")
-  if(number>0){
-     alert("The number greater than 0")
-  }else{
-    alert("The number less than 0")
+  function İfElse() {
+    const number = prompt("Enter a number: ");
+    if (number > 0) {
+      alert("The number greater than 0");
+    } else {
+      alert("The number less than 0");
+    }
   }
-}
 
   return (
     <div style={{ marginTop: "40px", marginLeft: "130px" }}>
@@ -405,26 +413,67 @@ function İfElse(){
               </pre>
               <h5>Example</h5>
               <pre>
-                
-                
                 const number =prompt("Enter a number: ")
-                <br/>
+                <br />
                 if(number &gt; 0)&#123;
-                <br/>
+                <br />
                 alert("The number is greater than 0")
-                <br/>
-
+                <br />
                 &#125;else&#123;
-                <br/>
-                alert("The number is less than 0")
-                &#125;
+                <br />
+                alert("The number is less than 0") &#125;
               </pre>
               <Button onClick={İfElse}>Click Me</Button>
-              
             </Col>
           </Col>
-          
         </Row>
+      </Row>
+      <Row>
+        <Col md="3">
+          <h3>Strings</h3>
+          <ul  style={{
+                    display: "flex",
+                    listStyle: "none",
+                    gap: "100px",
+                    marginLeft: "-40px",
+                  }}>
+            <li><CharAt/></li>
+            <li><CharCodeAt/></li>
+            <li><FromCharCode/></li>
+          </ul>
+          <ul  style={{
+                    display: "flex",
+                    listStyle: "none",
+                    gap: "100px",
+                    marginLeft: "-40px",
+                  }}>
+            <li><Replace/></li>
+            <li><Search/></li>
+            <li><Slice/></li>
+          </ul>
+          <ul  style={{
+                    display: "flex",
+                    listStyle: "none",
+                    gap: "100px",
+                    marginLeft: "-40px",
+                  }}>
+            <li><Split/></li>
+            <li><Substr/></li>
+            <li><Substring/></li>
+          </ul>
+          <ul  style={{
+                    display: "flex",
+                    listStyle: "none",
+                    gap: "100px",
+                    marginLeft: "-40px",
+                  }}>
+            <li><ToLowerCase/></li>
+            <li><ToUpperCase/></li>
+            
+          </ul>
+            
+          
+        </Col>
       </Row>
     </div>
   );
