@@ -19,7 +19,7 @@ export default function Splice() {
 
   return (
     <div>
-      <Col className="cheatsheet-style" style={{width:"490px"}}>
+      <Col className="cheatsheet-style" style={{width:"440px"}}>
         <h6 className="namestyle">splice(): Adds elements in a specified way and position</h6>
         <pre className="namestyle">
           const fruits = ["Apple","Pear","Cherry"]
@@ -28,11 +28,11 @@ export default function Splice() {
           <br />
           console.log(fruits)
           <br />
-          =&gt;["Apple","Pear","Lemon","Cherry"]
+          
           <br />
         </pre>
-        <Button onClick={ClickMe} style={{marginLeft:"180px",marginTop:"10px"}}>Click Me</Button>
-        <div style={{marginLeft:"130px",marginTop:"10px"}}>{result}</div>
+        <Button onClick={ClickMe} style={{marginLeft:"160px",marginTop:"10px"}}>Click Me</Button>
+        <div style={{marginLeft:"120px",marginTop:"10px"}}>{result}</div>
         <pre className="namestyle">
           <br />
           const fruits = ["Apple","Pear","Lemon","Cherry"]
@@ -41,10 +41,10 @@ export default function Splice() {
           <br />
           console.log(fruits)
           <br />
-          =&gt;["Apple","Pear","Lemon"]
+          
         </pre>
-        <Button onClick={ClickMe2} style={{marginLeft:"180px",marginTop:"10px"}}>Click Me</Button>
-        <div style={{marginLeft:"130px",marginTop:"10px"}}>{result2}</div>
+        <Button onClick={ClickMe2} style={{marginLeft:"160px",marginTop:"10px"}}>Try Me</Button>
+        <div style={{marginLeft:"145px",marginTop:"10px"}}>{result2}</div>
       </Col>
     </div>
   );

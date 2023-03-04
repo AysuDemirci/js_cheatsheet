@@ -15,7 +15,7 @@ export default function CharAt() {
     <div>
       <Col
         className="cheatsheet-style "
-        style={{ width: "490px", height: "270px" }}
+        style={{ width: "460px", height: "240px" }}
       >
         <h6 className="namestyle">
           toLowerCase() : Convert strings to lowercase string
@@ -25,13 +25,13 @@ export default function CharAt() {
           <br />
           let result = text.toLowerCase();
           <br />
-          =&gt;hello world!
+          
         </pre>
         <Button
           onClick={CharExm}
           style={{ marginLeft: "180px", marginTop: "10px" }}
         >
-          Click Me
+          Try Me
         </Button>
         <div style={{ marginLeft: "180px", marginTop: "10px" }}>{result}</div>
       </Col>

@@ -12,7 +12,7 @@ export default function Pop() {
 
   return (
     <div>
-      <Col className="cheatsheet-style" style={{width:"490px",height:"270px"}}>
+      <Col className="cheatsheet-style" style={{width:"440px",height:"260px"}}>
         <h6 className="namestyle">reverse(): Reverse the order of the elements in an array</h6>
         <pre className="namestyle">
           const numbers =["1","2","3","4"]
@@ -21,10 +21,10 @@ export default function Pop() {
           <br />
           console.log(reserved)
           <br />
-          =&gt;["4","3","2","1"]
+          
         </pre>
-        <Button onClick={ClickMe} style={{marginLeft:"180px",marginTop:"10px"}}>Click Me</Button>
-        <div style={{marginLeft:"200px",marginTop:"10px"}}>{result}</div>
+        <Button onClick={ClickMe} style={{marginLeft:"160px",marginTop:"10px"}}>Try Me</Button>
+        <div style={{marginLeft:"175px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>
   );

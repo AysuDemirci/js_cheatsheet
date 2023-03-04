@@ -15,7 +15,7 @@ export default function CharAt() {
     <div>
       <Col
         className="cheatsheet-style "
-        style={{ width: "490px", height: "270px" }}
+        style={{ width: "460px", height: "240px" }}
       >
         <h6 className="namestyle">
           split() : Splits a string object into an array of strings at a
@@ -26,13 +26,13 @@ export default function CharAt() {
           <br />
           const myArray = text.split(" ");
           <br />
-          =&gt;Howareyoudoingtoday?
+          
         </pre>
         <Button
           onClick={CharExm}
           style={{ marginLeft: "180px", marginTop: "10px" }}
         >
-          Click Me
+          Try Me
         </Button>
         <div style={{ marginLeft: "140px", marginTop: "10px" }}>{result}</div>
       </Col>

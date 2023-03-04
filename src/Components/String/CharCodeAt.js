@@ -14,7 +14,7 @@ export default function CharAt() {
     <div>
       <Col
         className="cheatsheet-style "
-        style={{ width: "490px", height: "270px" }}
+        style={{ width: "460px", height: "240px" }}
       >
         <h6 className="namestyle">
           charCodeAt() : Gives you the unicode of character at that position
@@ -24,13 +24,13 @@ export default function CharAt() {
           <br />
           let letter = text.charCodeAt(0)
           <br />
-          =&gt; 72
+          
         </pre>
         <Button
           onClick={CharExm}
           style={{ marginLeft: "180px", marginTop: "10px" }}
         >
-          Click Me
+          Try Me
         </Button>
         <div style={{ marginLeft: "210px", marginTop: "10px" }}>{result}</div>
       </Col>

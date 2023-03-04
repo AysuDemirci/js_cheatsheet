@@ -8,7 +8,7 @@ export default function For() {
     let text = "";
     let i =0;
     do{
-        text+=i + ",";
+        text+=i + " ";
         i++
     }
     while(i<3)
@@ -19,7 +19,7 @@ export default function For() {
     <div>
       <Col
         className="cheatsheet-style "
-        style={{ width: "490px", height: "350px", marginTop: "20px" }}
+        style={{ width: "460px", height: "320px", marginTop: "20px" }}
       >
         <h6 className="namestyle">
         do while : Similar to the while loop, however, it executes at least once and performs a check at the end to
@@ -38,10 +38,10 @@ see if the condition is met to execute again
           <br />
           while(i &lt; 3)
           <br/>
-          =&gt;0,1,2
+         
         </pre>
-        <Button style={{marginLeft:"180px"}} onClick={WhileExm}>Click Me</Button>
-        <div style={{marginLeft:"205px",marginTop:"10px"}}>{result}</div>
+        <Button style={{marginLeft:"170px",marginTop:"-30px"}} onClick={WhileExm}>Try Me</Button>
+        <div style={{marginLeft:"190px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>
   );

@@ -8,7 +8,7 @@ export default function Confirmed() {
 
   return (
     <div>
-      <Col className="cheatsheet-style" style={{ width: "450px", height: "250px",marginTop:"45px" }}>
+      <Col className="cheatsheet-style" style={{ width: "450px", height: "250px",marginTop:"65px" }}>
         <h6 className="namestyle">confirm(): Opens up yes/no dialog and returns true/false depending on user click</h6>
         <pre className="namestyle">
           function myFunc() &#123;

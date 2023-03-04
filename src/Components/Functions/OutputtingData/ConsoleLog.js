@@ -9,7 +9,7 @@ export default function Confirmed() {
   }
   return (
     <div>
-      <Col className="cheatsheet-style" style={{ width: "450px", height: "250px",marginTop:"45px" }}>
+      <Col className="cheatsheet-style" style={{ width: "450px", height: "250px",marginTop:"65px" }}>
         <h6 className="namestyle">
           console.log(): writes information to the browser console, good for
           debugging purposes

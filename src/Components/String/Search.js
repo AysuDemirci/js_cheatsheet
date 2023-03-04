@@ -15,7 +15,7 @@ export default function CharAt() {
     <div>
       <Col
         className="cheatsheet-style "
-        style={{ width: "490px", height: "270px" }}
+        style={{ width: "460px", height: "240px" }}
       >
         <h6 className="namestyle">
           search() : Executes a search for a matching text and returns its
@@ -26,13 +26,13 @@ export default function CharAt() {
           <br />
           let searched = text.search("blue")
           <br />
-          =&gt;18
+          
         </pre>
         <Button
           onClick={CharExm}
           style={{ marginLeft: "180px", marginTop: "10px" }}
         >
-          Click Me
+          Try Me
         </Button>
         <div style={{ marginLeft: "210px", marginTop: "10px" }}>{result}</div>
       </Col>

@@ -14,7 +14,7 @@ export default function CharAt() {
     <div>
       <Col
         className="cheatsheet-style "
-        style={{ width: "490px", height: "270px" }}
+        style={{ width: "460px", height: "240px" }}
       >
         <h6 className="namestyle">
           fromCharCode()() : Returns a string created from the specified
@@ -23,13 +23,13 @@ export default function CharAt() {
         <pre className="namestyle">
           let text = String.fromCharCode(65)
           <br />
-          =&gt; A
+         
         </pre>
         <Button
           onClick={CharExm}
           style={{ marginLeft: "180px", marginTop: "10px" }}
         >
-          Click Me
+          Try Me
         </Button>
         <div style={{ marginLeft: "215px", marginTop: "10px" }}>{result}</div>
       </Col>
