@@ -12,7 +12,7 @@ export default function Join() {
 
   return (
     <div>
-      <Col className="cheatsheet-style" style={{width:"490px",height:"270px"}}>
+      <Col className="cheatsheet-style" style={{width:"440px",height:"260px"}}>
         <h6 className="namestyle">
           join() : Combine elements of an array into a single string and return
           the string
@@ -22,10 +22,10 @@ export default function Join() {
           <br />
           let texts = lessons.join()
           <br />
-          =&gt;Math,History,PE
+         
         </pre>
-        <Button onClick={ClickMe} style={{marginLeft:"180px",marginTop:"10px"}}>Click Me</Button>
-        <div style={{marginLeft:"170px",marginTop:"10px"}}>{result}</div>
+        <Button onClick={ClickMe} style={{marginLeft:"160px",marginTop:"10px"}}>Try Me</Button>
+        <div style={{marginLeft:"150px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>
   );

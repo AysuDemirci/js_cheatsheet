@@ -8,7 +8,7 @@ export default function For() {
     let text = "";
     let i = 0;
     while (i < 2) {
-      text += "The number is " + i + ",";
+      text += "The number is " + i + " ";
       i++;
     }
     setResult(text);
@@ -18,7 +18,7 @@ export default function For() {
     <div>
       <Col
         className="cheatsheet-style "
-        style={{ width: "490px", height: "350px", marginTop: "20px" }}
+        style={{ width: "460px", height: "320px", marginTop: "20px" }}
       >
         <h6 className="namestyle">
           while : Sets up conditions under which a loop executes
@@ -34,9 +34,9 @@ export default function For() {
           <br />
           i++ &#125;
           <br />
-          =&gt;The number is 0, The number is 1
+         
         </pre>
-        <Button style={{marginLeft:"180px",marginTop:"10px"}} onClick={WhileExm}>Click Me</Button>
+        <Button style={{marginLeft:"170px",marginTop:"25px"}} onClick={WhileExm}>Try Me</Button>
         <div style={{marginLeft:"110px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>

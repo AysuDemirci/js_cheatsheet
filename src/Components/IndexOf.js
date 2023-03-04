@@ -13,7 +13,7 @@ export default function IndexOf() {
 
   return (
     <div>
-      <Col className="cheatsheet-style" style={{width:"490px",height:"270px"}}>
+      <Col className="cheatsheet-style" style={{width:"440px",height:"260px"}}>
         <h6 className="namestyle">
           indexOf() : Returns the first position at which a given element
           appears in an array
@@ -25,10 +25,10 @@ export default function IndexOf() {
           <br />
           console.log(index)
           <br />
-          =&gt; 1
+          
         </pre>
-        <Button onClick={ClickMe} style={{marginLeft:"180px",marginTop:"10px"}}>Click Me</Button>
-        <div style={{marginLeft:"220px",marginTop:"10px"}}>{fruit}</div>
+        <Button onClick={ClickMe} style={{marginLeft:"160px",marginTop:"10px"}}>Try Me</Button>
+        <div style={{marginLeft:"190px",marginTop:"10px"}}>{fruit}</div>
       </Col>
     </div>
   );

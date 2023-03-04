@@ -15,7 +15,7 @@ export default function CharAt() {
     <div>
       <Col
         className="cheatsheet-style "
-        style={{ width: "490px", height: "270px" }}
+        style={{ width: "460px", height: "240px" }}
       >
         <h6 className="namestyle">
           slice() : Extracts a section of a string and returns it as a new
@@ -26,15 +26,15 @@ export default function CharAt() {
           <br />
           const sliced = str.slice(31)
           <br />
-          =&gt;"the lazy dog."
+          
         </pre>
         <Button
           onClick={CharExm}
           style={{ marginLeft: "180px", marginTop: "10px" }}
         >
-          Click Me
+          Try Me
         </Button>
-        <div style={{ marginLeft: "180px", marginTop: "10px" }}>{result}</div>
+        <div style={{ marginLeft: "178px", marginTop: "10px" }}>{result}</div>
       </Col>
     </div>
   );

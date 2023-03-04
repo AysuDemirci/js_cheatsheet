@@ -24,34 +24,37 @@ import While from "./Loops/While";
 import DoWhile from "./Loops/DoWhile";
 import Break from "./Loops/Break";
 import Continue from "./Loops/Continue";
-import CharAt from "./String/CharAt"
-import CharCodeAt from "./String/CharCodeAt"
-import FromCharCode from "./String/FromCharCode"
-import Replace from "./String/Replace"
-import Search from "./String/Search"
-import Slice from "./String/Slice"
-import Split from "./String/Split"
-import Substr from "./String/Substr"
-import Substring from "./String/Substring"
-import ToLowerCase from "./String/ToLowerCase"
-import ToUpperCase from "./String/ToUpperCase"
+import CharAt from "./String/CharAt";
+import CharCodeAt from "./String/CharCodeAt";
+import FromCharCode from "./String/FromCharCode";
+import Replace from "./String/Replace";
+import Search from "./String/Search";
+import Slice from "./String/Slice";
+import Split from "./String/Split";
+import Substr from "./String/Substr";
+import Substring from "./String/Substring";
+import ToLowerCase from "./String/ToLowerCase";
+import ToUpperCase from "./String/ToUpperCase";
 
 export default function CheatSheet() {
   function İfElse() {
     const number = prompt("Enter a number: ");
     if (number > 0) {
       alert("The number greater than 0");
-    } else {
+    } else if(number == 0){
+      alert("Your number is equal to 0");
+    }else{
       alert("The number less than 0");
     }
   }
+  
 
   return (
-    <div style={{ marginTop: "40px", marginLeft: "130px" }}>
-      <Row style={{ gap: "30px" }}>
+    <div style={{ marginTop: "40px", marginLeft: "200px" }}>
+      <Row>
         <Col>
           <h2 style={{ marginBottom: "20px" }}>Getting Started</h2>
-          <Col className="cheatsheet-style" style={{ width: "500px" }}>
+          <Col className="cheatsheet-style" style={{ width: "440px" }}>
             <h4 style={{ marginTop: "10px" }}>Console</h4>
 
             <pre>
@@ -83,13 +86,13 @@ export default function CheatSheet() {
           </Col>
         </Col>
         <Col>
-          <h2 style={{ marginBottom: "20px" }}>Operators</h2>
+          <h2 style={{ marginBottom: "20px",marginLeft:"-50px" }}>Operators</h2>
           <Col
             className="cheatsheet-style"
-            style={{ width: "500px", height: "390px" }}
+            style={{ width: "440px", height: "365px", marginLeft: "-50px" }}
           >
             <h4 style={{ marginTop: "10px" }}>Basic Operators</h4>
-            <Table style={{ marginTop: "20px" }}>
+            
               <tr>
                 <td>+ </td>
                 <td>Addition</td>
@@ -122,17 +125,22 @@ export default function CheatSheet() {
                 <td>-- </td>
                 <td>Decrement numbers</td>
               </tr>
-            </Table>
+            
           </Col>
         </Col>
         <Col>
           <Col
             className="cheatsheet-style"
-            style={{ width: "500px", marginTop: "60px", height: "390px" }}
+            style={{
+              width: "440px",
+              marginTop: "60px",
+              height: "365px",
+              marginLeft: "-90px",
+            }}
           >
             <h4 style={{ marginTop: "10px" }}>Comparison Operators</h4>
 
-            <Table style={{ marginTop: "20px" }}>
+            
               <tr>
                 <td> ==</td>
                 <td>Equal to</td>
@@ -169,17 +177,17 @@ export default function CheatSheet() {
                 <td> ?</td>
                 <td>Ternary operator</td>
               </tr>
-            </Table>
+           
           </Col>
         </Col>
       </Row>
       <Row>
         <Col md="4">
-          <h2 style={{ marginBottom: "20px" }}>Arrays</h2>
+          <h2 style={{ marginBottom: "30px",marginTop:"30px" }}>Arrays</h2>
           <Col>
-            <Col className="cheatsheet-style">
-              <h4>Array </h4>
-              <pre>
+            <Col className="cheatsheet-style" style={{ width: "440px",marginLeft:"-5px" }}>
+              <pre >
+                <br/>
                 <code>var fruit = ["Banana","Apple","Cherry"]</code>
               </pre>
             </Col>
@@ -193,8 +201,9 @@ export default function CheatSheet() {
                   style={{
                     display: "flex",
                     listStyle: "none",
-                    gap: "100px",
+                    gap: "90px",
                     marginLeft: "-40px",
+                    marginBottom: "40px",
                   }}
                 >
                   <li>
@@ -212,8 +221,9 @@ export default function CheatSheet() {
                   style={{
                     display: "flex",
                     listStyle: "none",
-                    gap: "100px",
+                    gap: "90px",
                     marginLeft: "-40px",
+                    marginBottom: "40px",
                   }}
                 >
                   <li>
@@ -231,8 +241,9 @@ export default function CheatSheet() {
                   style={{
                     display: "flex",
                     listStyle: "none",
-                    gap: "100px",
+                    gap: "90px",
                     marginLeft: "-40px",
+                    marginBottom: "40px",
                   }}
                 >
                   <li>
@@ -249,7 +260,7 @@ export default function CheatSheet() {
                   style={{
                     display: "flex",
                     listStyle: "none",
-                    gap: "100px",
+                    gap: "90px",
                     marginLeft: "-40px",
                   }}
                 >
@@ -274,7 +285,7 @@ export default function CheatSheet() {
           <h2 style={{ marginBottom: "20px" }}>Functions</h2>
           <Col>
             <Col className="cheatsheet-style">
-              <pre>
+              <pre className="namestyle">
                 function name(parameter1,parameter2,parameter3)
                 <br />
                 &#123; what the function does &#125;
@@ -287,8 +298,9 @@ export default function CheatSheet() {
                   style={{
                     display: "flex",
                     listStyle: "none",
-                    gap: "100px",
+                    gap: "90px",
                     marginLeft: "-40px",
+                    marginBottom: "30px",
                   }}
                 >
                   <li>
@@ -307,8 +319,9 @@ export default function CheatSheet() {
                     style={{
                       display: "flex",
                       listStyle: "none",
-                      gap: "100px",
+                      gap: "90px",
                       marginLeft: "-10px",
+                      marginBottom: "40px",
                     }}
                   >
                     <li>
@@ -325,8 +338,9 @@ export default function CheatSheet() {
                     style={{
                       display: "flex",
                       listStyle: "none",
-                      gap: "100px",
+                      gap: "90px",
                       marginLeft: "-10px",
+                      marginBottom: "40px",
                     }}
                   >
                     <li>
@@ -343,11 +357,14 @@ export default function CheatSheet() {
         </Col>
       </Row>
       <Row style={{ columnGap: "170px" }}>
-        <h3>Loops </h3>
+        <h3 style={{ marginBottom: "30px" }}>Loops </h3>
         <Col md="3">
-          <Col className="cheatsheet-style" style={{ width: "500px" }}>
+          <Col
+            className="cheatsheet-style"
+            style={{ width: "490px", marginBottom: "40px" }}
+          >
             <Col>
-              <pre>
+              <pre className="namestyle">
                 <code>
                   for(before loop;condition for loop;execute after loop)
                   <br />
@@ -363,8 +380,9 @@ export default function CheatSheet() {
               style={{
                 display: "flex",
                 listStyle: "none",
-                gap: "100px",
+                gap: "90px",
                 marginLeft: "-30px",
+                marginBottom: "40px",
               }}
             >
               <li>
@@ -382,8 +400,9 @@ export default function CheatSheet() {
               style={{
                 display: "flex",
                 listStyle: "none",
-                gap: "100px",
+                gap: "90px",
                 marginLeft: "-30px",
+                marginBottom: "40px",
               }}
             >
               <li>
@@ -400,9 +419,9 @@ export default function CheatSheet() {
             <h3>If - Else</h3>
             <Col
               className="cheatsheet-style"
-              style={{ width: "500px", height: "330px" }}
+              style={{ width: "460px", height: "330px" }}
             >
-              <pre>
+              <pre className="namestyle">
                 if(condition)&#123;
                 <br />
                 //what to do if condition is met
@@ -423,56 +442,89 @@ export default function CheatSheet() {
                 <br />
                 alert("The number is less than 0") &#125;
               </pre>
-              <Button onClick={İfElse}>Click Me</Button>
+              <Button onClick={İfElse} style={{ marginLeft: "170px" }}>
+                Try Me
+              </Button>
             </Col>
           </Col>
         </Row>
       </Row>
       <Row>
         <Col md="3">
-          <h3>Strings</h3>
-          <ul  style={{
-                    display: "flex",
-                    listStyle: "none",
-                    gap: "100px",
-                    marginLeft: "-40px",
-                  }}>
-            <li><CharAt/></li>
-            <li><CharCodeAt/></li>
-            <li><FromCharCode/></li>
+          <h3 style={{ marginTop: "30px", marginBottom: "30px" }}>Strings</h3>
+          <ul
+            style={{
+              display: "flex",
+              listStyle: "none",
+              gap: "90px",
+              marginLeft: "-40px",
+              marginBottom: "40px",
+            }}
+          >
+            <li>
+              <CharAt />
+            </li>
+            <li>
+              <CharCodeAt />
+            </li>
+            <li>
+              <FromCharCode />
+            </li>
           </ul>
-          <ul  style={{
-                    display: "flex",
-                    listStyle: "none",
-                    gap: "100px",
-                    marginLeft: "-40px",
-                  }}>
-            <li><Replace/></li>
-            <li><Search/></li>
-            <li><Slice/></li>
+          <ul
+            style={{
+              display: "flex",
+              listStyle: "none",
+              gap: "90px",
+              marginLeft: "-40px",
+              marginBottom: "40px",
+            }}
+          >
+            <li>
+              <Replace />
+            </li>
+            <li>
+              <Search />
+            </li>
+            <li>
+              <Slice />
+            </li>
           </ul>
-          <ul  style={{
-                    display: "flex",
-                    listStyle: "none",
-                    gap: "100px",
-                    marginLeft: "-40px",
-                  }}>
-            <li><Split/></li>
-            <li><Substr/></li>
-            <li><Substring/></li>
+          <ul
+            style={{
+              display: "flex",
+              listStyle: "none",
+              gap: "90px",
+              marginLeft: "-40px",
+              marginBottom: "40px",
+            }}
+          >
+            <li>
+              <Split />
+            </li>
+            <li>
+              <Substr />
+            </li>
+            <li>
+              <Substring />
+            </li>
           </ul>
-          <ul  style={{
-                    display: "flex",
-                    listStyle: "none",
-                    gap: "100px",
-                    marginLeft: "-40px",
-                  }}>
-            <li><ToLowerCase/></li>
-            <li><ToUpperCase/></li>
-            
+          <ul
+            style={{
+              display: "flex",
+              listStyle: "none",
+              gap: "90px",
+              marginLeft: "-40px",
+              marginBottom: "40px",
+            }}
+          >
+            <li>
+              <ToLowerCase />
+            </li>
+            <li>
+              <ToUpperCase />
+            </li>
           </ul>
-            
-          
         </Col>
       </Row>
     </div>

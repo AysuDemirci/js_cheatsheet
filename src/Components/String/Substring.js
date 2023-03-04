@@ -15,7 +15,7 @@ export default function CharAt() {
     <div>
       <Col
         className="cheatsheet-style "
-        style={{ width: "490px", height: "270px" }}
+        style={{ width: "460px", height: "240px" }}
       >
         <h6 className="namestyle">
           substring() : Also similar to slice() but cant accept negative indices
@@ -26,15 +26,15 @@ export default function CharAt() {
           <br />
           let result = text.substring(2);
           <br />
-          =&gt;llo world!
+          
         </pre>
         <Button
           onClick={CharExm}
           style={{ marginLeft: "180px", marginTop: "10px" }}
         >
-          Click Me
+          Try Me
         </Button>
-        <div style={{ marginLeft: "190px", marginTop: "10px" }}>{result}</div>
+        <div style={{ marginLeft: "188px", marginTop: "10px" }}>{result}</div>
       </Col>
     </div>
   );

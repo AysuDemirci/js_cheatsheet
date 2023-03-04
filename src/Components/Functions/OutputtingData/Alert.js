@@ -8,7 +8,7 @@ export default function Alert() {
 
   return (
     <div  >
-      <h4 style={{ marginTop: "10px" }} >Outputting Data</h4>
+      <h4 style={{ marginTop: "15px",marginBottom:"25px" }} >Outputting Data</h4>
       <Col
         className="cheatsheet-style"
         style={{ width: "450px", height: "250px" }}

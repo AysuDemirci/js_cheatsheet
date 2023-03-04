@@ -8,7 +8,8 @@ export default function For() {
     let text = "";
     for(let i =0; i<5;i++){
         if(i===3)break;
-        text +=i +","
+        text +=i+" " ;
+       
     }
     
     setResult(text);
@@ -18,7 +19,7 @@ export default function For() {
     <div>
       <Col
         className="cheatsheet-style "
-        style={{ width: "490px", height: "350px", marginTop: "20px" }}
+        style={{ width: "460px", height: "320px", marginTop: "20px" }}
       >
         <h6 className="namestyle">
           break : Used to stop and exit the cycle at certain conditions
@@ -33,10 +34,10 @@ export default function For() {
           <br />
          text += i + ","&#125;
           <br />
-          =&gt; 0,1,2
+        
         </pre>
-        <Button style={{marginLeft:"180px",marginTop:"10px"}} onClick={WhileExm}>Click Me</Button>
-        <div style={{marginLeft:"205px",marginTop:"10px"}}>{result}</div>
+        <Button style={{marginLeft:"170px",marginTop:"30px"}} onClick={WhileExm}>Try Me</Button>
+        <div style={{marginLeft:"190px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>
   );

@@ -17,7 +17,7 @@ export default function For() {
     <div>
       <Col
         className="cheatsheet-style "
-        style={{ width: "490px", height: "350px", marginTop: "20px" }}
+        style={{ width: "460px", height: "320px", marginTop: "20px" }}
       >
         <h6 className="namestyle">
           for : The most common way to create a loop in Javascript
@@ -31,10 +31,10 @@ export default function For() {
           <br />
           console.log(i) &#125;
           <br />
-          =&gt;BMW,Volvo,Ford,Fiat,Audi
+          
         </pre>
-        <Button style={{marginLeft:"180px",marginTop:"10px"}} onClick={ForLoop}>Click Me</Button>
-        <div style={{marginLeft:"130px",marginTop:"10px"}}>{forloop}</div>
+        <Button style={{marginLeft:"160px",marginTop:"40px"}} onClick={ForLoop}>Try Me</Button>
+        <div style={{marginLeft:"120px",marginTop:"10px"}}>{forloop}</div>
       </Col>
     </div>
   );
