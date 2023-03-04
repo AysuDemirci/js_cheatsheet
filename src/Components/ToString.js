@@ -12,17 +12,17 @@ export default function ToString() {
 
   return (
     <div>
-      <Col className="cheatsheet-style" style={{width:"490px",height:"250px"}}>
+      <Col className="cheatsheet-style" style={{width:"440px",height:"250px"}}>
         <h6 className="namestyle">toString(): Converts elements to strings</h6>
         <pre className="namestyle">
           const array1 = ["1","2","a","2a"]
           <br />
           console.log(array1.toString)
           <br />
-          =&gt;"1,2,a,2a"
+          
         </pre>
-        <Button onClick={ClickMe} style={{marginLeft:"180px",marginTop:"10px"}}>Click Me</Button>
-        <div style={{marginLeft:"200px",marginTop:"10px"}}>{result}</div>
+        <Button onClick={ClickMe} style={{marginLeft:"160px",marginTop:"10px"}}>Try Me</Button>
+        <div style={{marginLeft:"175px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>
   );

@@ -15,7 +15,7 @@ export default function CharAt() {
     <div>
       <Col
         className="cheatsheet-style "
-        style={{ width: "490px", height: "270px" }}
+        style={{ width: "460px", height: "240px" }}
       >
         <h6 className="namestyle">
           replace() : Find and replace specific text in a string
@@ -25,15 +25,15 @@ export default function CharAt() {
           <br />
           const replace = coding.replace("TV","Internet")
           <br />
-          =&gt; I learned how to code from Internet
+         
         </pre>
         <Button
           onClick={CharExm}
-          style={{ marginLeft: "180px", marginTop: "10px" }}
+          style={{ marginLeft: "175px", marginTop: "10px" }}
         >
-          Click Me
+          Try Me
         </Button>
-        <div style={{marginLeft:"130px",marginTop:"10px"}}>{result}</div>
+        <div style={{marginLeft:"110px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>
   );

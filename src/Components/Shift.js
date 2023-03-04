@@ -12,7 +12,7 @@ export default function Pop() {
 
   return (
     <div>
-      <Col className="cheatsheet-style" style={{width:"490px",height:"270px"}}>
+      <Col className="cheatsheet-style" style={{width:"440px",height:"260px"}}>
         <h6 className="namestyle">shift(): Remove the first element of an array</h6>
         <pre className="namestyle">
           const myFish = ["Angel","Clown","Mandarin","Surgeon"]
@@ -21,11 +21,11 @@ export default function Pop() {
           <br />
           console.log(myFish)
           <br />
-          =&gt; ["Clown","Mandarin","Surgeon"]
+         
         </pre>
 
-        <Button onClick={ClickMe} style={{marginLeft:"180px",marginTop:"10px"}}>Click Me</Button>
-        <div style={{marginLeft:"130px",marginTop:"10px"}}>{result}</div>
+        <Button onClick={ClickMe} style={{marginLeft:"160px",marginTop:"10px"}}>Try Me</Button>
+        <div style={{marginLeft:"120px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>
   );
