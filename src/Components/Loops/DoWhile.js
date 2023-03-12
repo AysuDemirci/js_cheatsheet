@@ -4,7 +4,7 @@ import { Button, Col } from "reactstrap";
 export default function For() {
   const [result, setResult] = useState();
 
-  function WhileExm() {
+  function DoWhileExm() {
     let text = "";
     let i =0;
     do{
@@ -40,7 +40,7 @@ see if the condition is met to execute again
           <br/>
          
         </pre>
-        <Button style={{marginLeft:"170px",marginTop:"-30px"}} onClick={WhileExm}>Try Me</Button>
+        <Button style={{marginLeft:"170px",marginTop:"-30px"}} onClick={DoWhileExm}>Try Me</Button>
         <div style={{marginLeft:"190px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>

@@ -4,7 +4,7 @@ import { Button, Col } from "reactstrap";
 export default function CharAt() {
   const [result, setResult] = useState();
 
-  function CharExm() {
+  function SplitExm() {
     let text = "How are you doing today?";
     const myArray = text.split(" ");
 
@@ -29,7 +29,7 @@ export default function CharAt() {
           
         </pre>
         <Button
-          onClick={CharExm}
+          onClick={SplitExm}
           style={{ marginLeft: "180px", marginTop: "10px" }}
         >
           Try Me
