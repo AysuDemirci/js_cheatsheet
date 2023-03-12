@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Col } from "reactstrap";
 
-export default function Confirmed() {
+export default function DocumentWrite() {
   function ClickMe() {
     const lessons = ["Math", "History", "PE"];
     let texts = lessons.join();

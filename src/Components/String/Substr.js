@@ -4,7 +4,7 @@ import { Button, Col } from "reactstrap";
 export default function CharAt() {
   const [result, setResult] = useState();
 
-  function CharExm() {
+  function SubExm() {
     let text = "Hello world!";
     let result = text.substr(1, 4);
 
@@ -29,7 +29,7 @@ export default function CharAt() {
          
         </pre>
         <Button
-          onClick={CharExm}
+          onClick={SubExm}
           style={{ marginLeft: "180px", marginTop: "10px" }}
         >
           Try Me
