@@ -4,7 +4,7 @@ import { Button, Col } from "reactstrap";
 export default function CharAt() {
   const [result, setResult] = useState();
 
-  function CharExm() {
+  function RepExm() {
     const coding = "I learned how to code from TV";
     const replace = coding.replace("TV", "Internet");
 
@@ -28,7 +28,7 @@ export default function CharAt() {
          
         </pre>
         <Button
-          onClick={CharExm}
+          onClick={RepExm}
           style={{ marginLeft: "175px", marginTop: "10px" }}
         >
           Try Me

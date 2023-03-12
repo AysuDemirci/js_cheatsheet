@@ -4,7 +4,7 @@ import { Button, Col } from "reactstrap";
 export default function CharAt() {
   const [result, setResult] = useState();
 
-  function CharExm() {
+  function ToLowExm() {
     let text = "Hello world!";
     let result = text.toLowerCase();
 
@@ -28,7 +28,7 @@ export default function CharAt() {
           
         </pre>
         <Button
-          onClick={CharExm}
+          onClick={ToLowExm}
           style={{ marginLeft: "180px", marginTop: "10px" }}
         >
           Try Me

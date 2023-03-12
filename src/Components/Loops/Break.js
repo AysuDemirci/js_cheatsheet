@@ -4,7 +4,7 @@ import { Button, Col } from "reactstrap";
 export default function For() {
   const [result, setResult] = useState();
 
-  function WhileExm() {
+  function BreakExm() {
     let text = "";
     for(let i =0; i<5;i++){
         if(i===3)break;
@@ -36,7 +36,7 @@ export default function For() {
           <br />
         
         </pre>
-        <Button style={{marginLeft:"170px",marginTop:"30px"}} onClick={WhileExm}>Try Me</Button>
+        <Button style={{marginLeft:"170px",marginTop:"30px"}} onClick={BreakExm}>Try Me</Button>
         <div style={{marginLeft:"190px",marginTop:"10px"}}>{result}</div>
       </Col>
     </div>

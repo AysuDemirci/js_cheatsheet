@@ -4,7 +4,7 @@ import { Button, Col } from "reactstrap";
 export default function CharAt() {
   const [result, setResult] = useState();
 
-  function CharExm() {
+  function SearchExm() {
     let text = "Mr. Demirci has a blue car";
     let searched = text.search("blue");
 
@@ -29,7 +29,7 @@ export default function CharAt() {
           
         </pre>
         <Button
-          onClick={CharExm}
+          onClick={SearchExm}
           style={{ marginLeft: "180px", marginTop: "10px" }}
         >
           Try Me

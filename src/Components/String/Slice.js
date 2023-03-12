@@ -4,7 +4,7 @@ import { Button, Col } from "reactstrap";
 export default function CharAt() {
   const [result, setResult] = useState();
 
-  function CharExm() {
+  function SliceExm() {
     const str = "The quick brown fox jumps over the lazy dog.";
     const sliced = str.slice(31);
 
@@ -29,7 +29,7 @@ export default function CharAt() {
           
         </pre>
         <Button
-          onClick={CharExm}
+          onClick={SliceExm}
           style={{ marginLeft: "180px", marginTop: "10px" }}
         >
           Try Me
